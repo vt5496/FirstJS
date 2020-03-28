@@ -1,0 +1,85 @@
+@import "reset.css";
+body{
+    background-color: #2b2a29;
+}
+.container {
+    width: 1020px;
+    padding: 0 10px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    }
+
+.header-main-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding-top: 20px;
+}
+
+
+.header-logo {
+    height: 80px;
+    width: 20%;
+}
+.header-logo > a {
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    transition: all;
+    transition-duration: 0.2s;
+    box-sizing: border-box;
+    font-size: 34px;
+}
+.header-logo > a:hover {
+    padding: 0;
+    font-size: 40px;
+}
+.header-logo>a>span{
+    color: #efefef;
+    font-family: "Comic Sans MS",'Cabin', sans-serif;
+    font-weight: 600;
+    padding-left: 10px;
+}
+.img_logo {
+    height: 100%;
+}
+
+
+.nav-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+}
+.nav-header>.header-main-element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    height: 100%;
+    box-sizing: border-box;
+}
+.nav-header>.header-main-element>.header-main-element-link{
+    text-decoration: none;
+    color: #efefef;
+    padding: 0 5px;
+    font-size: 34px;
+    font-family: "Comic Sans MS",'Cabin', sans-serif;
+    font-weight: 600;
+    transition: all;
+    transition-duration: 0.2s;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-header>.header-main-element>.header-main-element-link:hover{
+    font-size: 40px;
+    padding: 0;
+}
