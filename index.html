@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style/index-windowed.css">
 </head>
 <body>
+
 <header>
     <div class="container">
         <div class="header-main-inner">
@@ -41,6 +42,7 @@
 
 <div class="container">
     <div id="main" class="windowed">
+
         <div id="content" class="margin"></div>
 
         <div id="side-bar" class="widget-area">
@@ -61,16 +63,17 @@
                     <img src="content/media/picture/social/vk.png" alt="vk">
                 </a>
             </div>
-            <div class="widget-area-email">
+            <div class="widget-area-email" onclick="email()">
                 <header>
                       <span>Ваши предложения</span>
                 </header>
                 <article>
                     <span>Если у вас возникла интересная идея или предложения, присылайте нам на нашу электронную почту</span>
-                    <button>Предложить</button>
+                    <button onclick="email()">Предложить</button>
                 </article>
             </div>
         </div>
+
     </div>
 </div>
 
