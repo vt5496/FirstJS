@@ -1,3 +1,9 @@
+*{
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
 .windowed {
     margin-top: 20px;
     display: flex;
@@ -17,6 +23,9 @@
 
 .widget-area {
     width: 30%;
+    height: 100%;
+    position: sticky;
+    top: 0;
 }
 
 .widget-area-social{
@@ -70,6 +79,7 @@
     font-size: 25px;
     font-family: "Comic Sans MS";
     color: white;
+    text-align: center;
 }
 .widget-area-email>article{
     height: 70%;
@@ -105,6 +115,45 @@
 .widget-area-email>article>button:hover{
     font-size: 140%;
 }
+
+.widget-area-ask {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    height: 120%;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #861983;
+}
+.widget-area-ask>span{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    font-size: 30px;
+    font-family: "Comic Sans MS";
+    text-align: center;
+    color: whitesmoke;
+}
+.widget-area-ask>div{
+    width: 30%;
+    transition: all;
+    transition-duration: 0.3s;
+    padding: 10px;
+}
+.widget-area-ask>div>img{
+    width: 100%;
+}
+.widget-area-ask>div:hover{
+    padding: 5px;
+}
+
 
 
 

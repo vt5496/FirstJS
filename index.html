@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="content/media/picture/header-logo.png">
     <title>vt5496</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style/header.css">
-    <link rel="stylesheet" href="style/index-windowed.css">
+    <link rel="stylesheet" href="style/windowed.css">
 </head>
 <body>
 
@@ -15,25 +16,25 @@
     <div class="container">
         <div class="header-main-inner">
             <div class="header-logo">
-                <a href="/">
+                <a href="index.html">
                     <img class="img_logo" src="content/media/picture/header-logo.png" alt="logo"><span>vt5496</span>
                 </a>
             </div>
             <nav class="nav-header">
                 <li class="header-main-element">
-                    <a class="header-main-element-link" href="main/news.html">News</a>
+                    <a class="header-main-element-link" href="pages/main/news.html">News</a>
                 </li>
                 <li class="header-main-element">
-                    <a class="header-main-element-link" href="main/math-formuls.html">Math</a>
+                    <a class="header-main-element-link" href="pages/main/math-formuls.html">Math</a>
                 </li>
                 <li class="header-main-element">
-                    <a class="header-main-element-link" href="main/games.html">Games</a>
+                    <a class="header-main-element-link" href="pages/main/games.html">Games</a>
                 </li>
                 <li class="header-main-element">
-                    <a class="header-main-element-link" href="main/contacts.html">Contacts</a>
+                    <a class="header-main-element-link" href="pages/main/contacts.html">Contacts</a>
                 </li>
                 <li class="header-main-element">
-                    <a class="header-main-element-link" href="main/about_us.html">About</a>
+                    <a class="header-main-element-link" href="pages/main/about_us.html">About</a>
                 </li>
             </nav>
 </div>
@@ -45,7 +46,7 @@
 
         <div id="content" class="margin"></div>
 
-        <div id="side-bar" class="widget-area">
+        <aside id="side-bar" class="widget-area">
             <div class="widget-area-social">
                 <a href="https://t.me/vt5496">
                     <img src="content/media/picture/social/telegram.png" alt="telegram">
@@ -63,19 +64,25 @@
                     <img src="content/media/picture/social/vk.png" alt="vk">
                 </a>
             </div>
-            <div class="widget-area-email" onclick="email()">
+            <a class="widget-area-email" href="mailto:tkk.vlad@gmail.com">
                 <header>
                       <span>Ваши предложения</span>
                 </header>
                 <article>
                     <span>Если у вас возникла интересная идея или предложения, присылайте нам на нашу электронную почту</span>
-                    <button onclick="email()">Предложить</button>
+                    <button>Предложить</button>
                 </article>
-            </div>
-        </div>
+            </a>
+            <a class="widget-area-ask" href="https://f3.cool/vt5496">
+                <span>Ask me anonymous</span><div><img src="content/media/picture/social/F3.png" alt="ASK!"></div>
+            </a>
+        </aside>
 
     </div>
 </div>
 
 </body>
+
+
+
 </html>
