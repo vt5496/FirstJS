@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My cats</title>
+
+    <link rel="icon" href="../../media/picture/header-logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/windowed.css">
+    <link rel="stylesheet" href="../../css/fonts.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="../../script/mobile.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="../../script/game-my-cats.js"></script>
+    <link rel="stylesheet" href="../../css/works/my-cats.css">
+</head>
+<body>
+<header>
+    <div class="container-header">
+        <div class="header-main-inner">
+            <div class="header-logo">
+                <a href="../../index.html">
+                    <img class="img_logo" src="../../media/picture/header-logo-2.png" alt="logo">
+                </a>
+            </div>
+            <nav class="nav-header">
+                <a href="javascript:void(0);" class="mobileIcon"><img src="../../media/picture/mobile-menu.png" alt=""></a>
+                <div id="header-main-elements">
+                    <li class="header-main-element">
+                        <a class="header-main-element-link" href="../../pages/main/news.html">News</a>
+                    </li>
+                    <li class="header-main-element">
+                        <a class="header-main-element-link" href="../../pages/main/math-formuls.html">Math</a>
+                    </li>
+                    <li class="header-main-element">
+                        <a class="header-main-element-link" href="../main/works.html">Works</a>
+                    </li>
+                    <li class="header-main-element">
+                        <a class="header-main-element-link" href="../../pages/main/contacts.html">Contacts</a>
+                    </li>
+                    <li class="header-main-element">
+                        <a class="header-main-element-link" href="../../pages/main/about_us.html">About</a>
+                    </li>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<h1 class="h1">Создай и покажи своего котика!</h1>
+
+<p class="text">
+    <button class="new" onclick="kolKotikov()">Количество котиков</button>
+</p>
+<p class="text">
+    <button class="new" id="addKisa">Создать котика</button>
+</p>
+
+<div id="newKot9">
+    <div class="inputText">
+        <label class='textask'  for="newName">Имя</label>
+        <input type="text" id="newName" name="firstname" placeholder="Имя..">
+
+        <div class="center">
+            <label class="custom-file-upload">
+                <form enctype="multipart/form-data" method="post">
+                    <input id="imgCat" type="file" accept="image/*,image/jpeg"/>
+                </form>
+                <i class="fa fa-cloud-upload"></i> Загрузить фото котика
+            </label>
+        </div>
+
+        <label class='textask' for="newPoroda">Порода</label>
+        <input type="text" id="newPoroda" name="lastname" placeholder="Порода..">
+
+        <label class='textask' for="newColor">Цвет</label>
+        <input type="text" id="newColor" name="lastname" placeholder="Цвет..">
+
+        <label class='textask'  for="newWeight">Вес</label>
+        <input type="text" id="newWeight" name="lastname" placeholder="Вес..">
+
+        <label class='textask' for="newGender">Гендер</label>
+        <select id="newGender" name="country">
+            <option value="male">Выберите пол..</option>
+            <option value="Мальчик">Мальчик</option>
+            <option value="Девочка">Девочка</option>
+        </select>
+
+        <button class="buttonNew" onclick="newCat()">Создать котика</button>
+    </div>
+</div>
+
+
+<p class="text">
+    <button class="new" id="openMenuOpenCat">Вывести котика</button>
+</p>
+
+<div id="openCat">
+    <div class="inputText">
+        <label class='textask'  for="newName">Номер котика</label>
+        <input type="text" id="numberCat" name="newName" placeholder="Введите значение..">
+
+        <button class="buttonNew" onclick="openCatF()">Показать котика</button>
+    </div>
+</div>
+
+<!-- вывод одного киси -->
+<div class="Wraper2">
+    <div id="odinKot9">
+    </div>
+</div>
+
+<p class="text">
+    <button class="new" onclick="addCats()">Вывести всех котиков</button>
+</p>
+
+
+<div class="Wraper">
+    <div id="vseKoti">
+    </div>
+</div>
+
+
+<script src="./../../Sandbox/index.js"></script>
+</body>
+</html>

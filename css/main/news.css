@@ -1,0 +1,83 @@
+.new-news{
+    display: flex;
+    justify-content: flex-end;
+    height: 57px;
+    align-items: center;
+    width: 100%;
+}
+.new-news>button{
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    height: 80%;
+}
+.new-news>button>span{
+    color: white;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+.new-news>button:hover span{
+    font-weight: 600;
+    font-size: 30px;
+}
+.new-news>button:active span{
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.new-news-window{
+    width: 100%;
+    background-color: #f1ede9;
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.new-news-window>label {
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Comic Sans MS";
+}
+.new-news-window>input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.new-news-window>textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: none;
+}
+.new-news-window>button{
+    width: 20%;
+    height: 40px;
+    margin-left: 20px;
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+    font-family: "Comic Sans MS";
+    font-weight: 600;
+    font-size: 20px;
+}
+.new-news-window>button:hover{
+    font-size: 23px;
+}
+.news{
+    width: 100%;
+    height: auto;
+}
+.news>header{
+
+}
+.news>article{
+
+}

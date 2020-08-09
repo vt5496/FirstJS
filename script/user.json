@@ -1,0 +1,24 @@
+[
+  {
+    "firsName": "Kate",
+    "lastName": "Egorova",
+    "nickName": "Nickname",
+    "followings": 314
+  },
+  {
+    "firsName": "Test",
+    "lastName": "Testovich",
+    "nickName": "Nickname",
+    "followings": 314
+  },
+  {
+    "lastName": "Egorova",
+    "nickName": "Nickname",
+    "followings": "asddsa"
+  },
+  {
+    "firsName": "Test",
+    "lastName": 2,
+    "followings": 314
+  }
+]

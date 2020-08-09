@@ -1,0 +1,166 @@
+.place-cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 650px;
+    height: 360px;
+    margin: 20px auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+
+
+
+
+.card-main {
+    position: absolute;
+    z-index: 2;
+    width: 360px;
+    height: 360px;
+    left: calc(50% - 180px);
+    transition: 1s;
+}
+.card-main-move{
+    left: 0;
+}
+.card-main>.img-card{
+    border-radius: 10px;
+    height: 100%;
+}
+.card-main>.following-circle{
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: sans-serif;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: calc(0% - 25px);
+    left: calc(50% - 25px);
+    border-radius: 50%;
+    background-color: #ff637e;
+    z-index: 3;
+    box-shadow: 0px 0px 20px 0px rgba(255,99,125,1);
+}
+.card-main>.position-pro{
+    width: 40px;
+    height: 20px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25%;
+    font-size: 7px;
+    color: white;
+    background-color: #3e3b5a;
+    z-index: 3;
+}
+.card-main>.following-circle:active{
+    background-color: #b9485b;
+}
+
+
+
+
+
+.card-info {
+    position: absolute;
+    z-index: 1;
+    width: 340px;
+    height: 340px;
+    background-color: #ffffff;
+    right: calc(50% - 170px);
+    transition: 1s;
+}
+.card-info-move{
+    right: 0;
+}
+.card-info>.header{
+    height: 40%;
+    padding-left: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card-info>.header>.header-name{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.card-info>.header>.header-nickname{
+    margin-top: 4.5%;
+    font-size: 12px;
+    font-family: sans-serif;
+    color: #505050;
+}
+
+
+.card-info>.card-info-statistics{
+    height: 20%;
+    padding-left: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.card-info-statistics>.card-info-one-statistic{
+    width: 33.3%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card-info-one-statistic>.name-statistic{
+    font-size: 10px;
+    font-family: sans-serif;
+    color: #7f7f7f;
+    padding-bottom: 10%;
+}
+.card-info-one-statistic>.description-statistic{
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+
+.card-info>.card-info-send-message{
+    height: 40%;
+    padding-left: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-info-send-message>.card-info-send-message-button{
+    height: 35%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: #26273b;
+    font-size: 9px;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: white;
+    transition: 0.2s;
+}
+.card-info-send-message>.card-info-send-message-button:hover{
+    font-size: 11px;
+}
+.card-info-send-message>.card-info-send-message-button:active{
+    background-color: #3b3c57;
+}
+

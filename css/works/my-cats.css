@@ -1,0 +1,394 @@
+body {
+    background: #efefef;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.zagolovok {
+    text-align: center;
+    font: 18pt Tahoma;
+
+}
+
+.text {
+    text-align: center;
+    font: 14pt Tahoma;
+}
+
+.textSkill {
+    text-align: center;
+    font-family: sans-serif;
+    color: #c9cccb;
+}
+
+.textWhereFrom {
+    text-align: center;
+    font: 17px sans-serif;
+    font-weight: 600;
+    margin: 3px 0 0px 0;
+    color: #a1a1bb;
+}
+
+.textSkills {
+    text-align: left;
+    font: 9pt Times Trebuchet MS, sans-serif;
+    padding: 20px 0 0 15px;
+    color: #abaead;
+    font-weight: bold;
+}
+
+.textPositionMan {
+    text-align: center;
+    font: 13pt  sans-serif;
+    margin: 12px 70px;
+    color: #8984a8;
+
+}
+
+.textask {
+    font: 10pt Tahoma;
+    margin: 0 0 0 5px;
+    font-weight: bold;
+
+}
+
+.h1 {
+    font: 40pt Tahoma;
+    font-weight: bold;
+    background: rgb(255,119,0);
+    background: linear-gradient(90deg, rgba(255,119,0,1) 0%, rgba(249,3,3,1) 43%, rgba(124,0,255,1) 100%); -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    color: transparent;
+}
+
+button.new {
+    background: -moz-linear-gradient(#00BBD6, #EBFFFF);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#00BBD6), to(#EBFFFF));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00BBD6', endColorstr='#EBFFFF');
+    padding: 15px 30px;
+    color: #333;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #666;
+    font: 14pt Tahoma;
+    font-weight: 600;
+}
+
+.nameCat {
+    color: red;
+    font-weight: bold;
+}
+
+.Wraper {
+    padding: 15px;
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+}
+
+vlavlavla
+.divimg {
+
+}
+
+.divimg  >  .img {
+
+}
+
+.Wraper2 {
+    padding: 0px;
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+}
+
+#vseKoti {
+    display: flex;
+    flex-direction: row;
+    margin: -15px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#odinKot9 {
+    display: flex;
+    flex-direction: row;
+    margin: -15px;
+    width: 40%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cat {
+    position: relative;
+    box-sizing: border-box;
+    margin: 15px;
+    width: 30%;
+    background: #231f3a;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.buttonsOfMan {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 0 25px 0;
+}
+
+.buttonOfMan {
+    box-sizing: border-box;
+    width: 40%;
+    background-color: transparent;
+    color: #7d2685;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 6px;
+    margin: 5px;
+    border: 2px solid #7d2685;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.2s;
+}
+.buttonOfMan:hover{
+    background-color: #c500d6;
+    color: white;
+    border-color: #c500d6;
+}
+
+.imgCenter {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    margin: 40px 0 10px 0;
+    width: 150px;
+    height: 150px;
+    border: 2px solid #7d2685;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.proClass {
+    position: absolute;
+    left:30px ;
+    top:30px;
+    padding: 3px 8px;
+    background-color: #feb902;
+    color: black;
+    font: 16px Trebuchet MS, sans-serif;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.imgCenter > .img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+.cat > .zagolovok {
+    padding:  0 20px 0 20px;
+    margin: 0;
+    font: 25px 500 sans-serif;
+    color: #aeabc8;
+    font-weight: bold;
+}
+
+.onecat {
+    box-sizing: border-box;
+    margin: 15px;
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+}
+
+.onecat > .zagolovok {
+    background: linear-gradient(90deg, rgba(61, 1, 139, 1) 0%, rgba(136, 4, 223, 1) 35%, rgba(35, 197, 230, 1) 100%);
+    padding: 20px;
+    margin: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.skillsPage {
+    background: #1f1b36;
+    border-radius: 20px;
+}
+
+.properties {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: left;
+    padding: 0 15px 20px 15px;
+    margin: 10px 0 0 0;
+}
+
+.properties > .TextSkill {
+    width: auto;
+    border-radius: 5px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    text-align: center;
+    font: 10pt Times New Roman, serif;
+    color: #a0a5a0;
+    border: 1px solid #62375d;
+    margin: 0 5px 10px 5px;
+}
+
+
+@media (max-width: 1200px) {
+    .Wraper {
+        width: 800px;
+    }
+
+    .Wraper2 {
+        width: 800px;
+    }
+
+    .cat {
+        width: 100%;
+    }
+
+    .onecat {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .Wraper {
+        width: 600px;
+    }
+
+    .Wraper2 {
+        width: 600px;
+    }
+
+    .cat {
+        width: 45%;
+    }
+
+    .onecat {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .Wraper {
+        width: 100%;
+        padding: 0;
+    }
+
+    .Wraper2 {
+        width: 100%;
+        padding: 0;
+    }
+
+    .cat {
+        width: 100%;
+    }
+
+    .onecat {
+        width: 100%;
+    }
+}
+
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 2px 0 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.buttonNew {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.buttonNewSkrit {
+    width: 100%;
+    background-color: #ff0000;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.buttonNewSkrit {
+    background-color: #ff0000;
+}
+
+.inputText {
+    border-radius: 5px;
+    background-color: #fdf2ff;
+    padding: 15px;
+    margin: 0 auto;
+    width: 300px;
+    justify-content: center;
+    box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
+
+}
+
+.center {
+    text-align: center;
+}
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fafff4;
+    font: 13px Tahoma;
+}
+
+#newKot9{
+    display: none;
+}
+#newKot9.active{
+    display: flex;
+}
+#openCat{
+    display: none;
+}
+#openCat.active{
+    display: flex;
+}

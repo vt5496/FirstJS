@@ -1,0 +1,137 @@
+@import "reset.css";
+body{
+    background-color: #2b2a29;
+}
+*{
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.container-header {
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.header-main-inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+
+.header-logo {
+    height: 60px;
+    width: 20%;
+}
+.header-logo > a {
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    transition: all;
+    transition-duration: 0.2s;
+}
+.header-logo > a:hover {
+    padding: 5px;
+}
+.img_logo {
+    height: 100%;
+}
+
+.nav-header{
+    width: 80%;
+}
+.nav-header>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.nav-header>.mobileIcon{
+    display: none;
+}
+.header-main-element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    margin: 0 10px;
+}
+.nav-header>div>.header-main-element>.header-main-element-link{
+    text-decoration: none;
+    color: #efefef;
+    padding: 0 5px;
+    font-size: 34px;
+    font-family: "Comic Sans MS",'Cabin', sans-serif;
+    font-weight: 600;
+    transition: all;
+    transition-duration: 0.2s;
+}
+
+
+.nav-header>div>.header-main-element>.header-main-element-link:active{
+    color: #a4a4a4;
+}
+
+
+
+
+
+@media (max-width: 600px) {
+    header {
+        height: 60px;
+    }
+
+    .header-main-inner {
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .header-main-inner > .header-logo {
+        width: 100%;
+        position: fixed;
+        z-index: 99;
+        background-color: #232221;
+    }
+
+    .nav-header > .mobileIcon {
+        display: block;
+        position: fixed;
+        left: 0;
+        width: 60px;
+        z-index: 100;
+        padding: 13px;
+    }
+
+    .nav-header > .mobileIcon > img {
+        width: 100%;
+    }
+
+    .nav-header > div {
+        position: fixed;
+        top: 60px;
+        left: -100%;
+        display: block;
+        z-index: 1;
+        width: 70%;
+        background-color: #2b2a29;
+        transition: 1s;
+    }
+
+    .nav-header > div.active {
+        left: 0;
+    }
+
+    .header-main-element {
+        padding: 20px 10px
+    }
+
+    .nav-header > div > li + li {
+        border-top: 1px solid #6e6767;
+    }
+}

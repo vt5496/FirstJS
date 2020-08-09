@@ -2,25 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="content/media/picture/header-logo.png">
     <title>vt5496</title>
+
+    <link rel="icon" href="media/picture/header-logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style/header.css">
-    <link rel="stylesheet" href="style/windowed.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" href="css/windowed.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="script/mobile.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
 <header>
-    <div class="container">
+    <div class="container-header">
         <div class="header-main-inner">
             <div class="header-logo">
                 <a href="index.html">
-                    <img class="img_logo" src="content/media/picture/header-logo.png" alt="logo"><span>vt5496</span>
+                    <img class="img_logo" src="media/picture/header-logo-2.png" alt="logo">
                 </a>
             </div>
             <nav class="nav-header">
+                <a href="javascript:void(0);" class="mobileIcon"><img src="media/picture/mobile-menu.png" alt=""></a>
+                <div id="header-main-elements">
                 <li class="header-main-element">
                     <a class="header-main-element-link" href="pages/main/news.html">News</a>
                 </li>
@@ -28,7 +34,7 @@
                     <a class="header-main-element-link" href="pages/main/math-formuls.html">Math</a>
                 </li>
                 <li class="header-main-element">
-                    <a class="header-main-element-link" href="pages/main/games.html">Games</a>
+                    <a class="header-main-element-link" href="pages/main/works.html">Works</a>
                 </li>
                 <li class="header-main-element">
                     <a class="header-main-element-link" href="pages/main/contacts.html">Contacts</a>
@@ -36,47 +42,55 @@
                 <li class="header-main-element">
                     <a class="header-main-element-link" href="pages/main/about_us.html">About</a>
                 </li>
+                </div>
             </nav>
 </div>
     </div>
 </header>
 
-<div class="container">
-    <div id="main" class="windowed">
-
-        <div id="content" class="margin"></div>
+<div id="main" class="container">
+    <div class="windowed">
 
         <aside id="side-bar" class="widget-area">
-            <div class="widget-area-social">
-                <a href="https://t.me/vt5496">
-                    <img src="content/media/picture/social/telegram.png" alt="telegram">
+            <a href="javascript:void(0)" id="open-widgets">
+                <span>Feedback</span>
+                <img src="media/picture/interface/chevron-down.png" alt="">
+            </a>
+            <div id="widgets">
+                <div class="widget-area-social">
+                    <a href="https://t.me/vt5496">
+                        <img src="media/picture/social/telegram.png" alt="telegram">
+                    </a>
+                    <a href="viber://chat?number=%2B380635638793">
+                        <img src="media/picture/social/viber.png" alt="viber">
+                    </a>
+                    <a href="https://www.instagram.com/vt5496/">
+                        <img src="media/picture/social/instagram.png" alt="instagram">
+                    </a>
+                    <a href="https://www.facebook.com/vlad.tkk?ref=bookmarks">
+                        <img src="media/picture/social/facebook.png" alt="facebook">
+                    </a>
+                    <a href="https://vk.com/vt5496">
+                        <img src="media/picture/social/vk.png" alt="vk">
+                    </a>
+                </div>
+                <a class="widget-area-email" href="mailto:tkk.vlad@gmail.com">
+                    <header>
+                        <span>Ваши предложения</span>
+                    </header>
+                    <article>
+                        <span>Если у вас возникла интересная идея или предложения, присылайте нам на нашу электронную почту</span>
+                        <button>Предложить</button>
+                    </article>
                 </a>
-                <a href="viber://chat?number=%2B380635638793">
-                    <img src="content/media/picture/social/viber.png" alt="viber">
-                </a>
-                <a href="https://www.instagram.com/vt5496/">
-                    <img src="content/media/picture/social/instagram.png" alt="instagram">
-                </a>
-                <a href="https://www.facebook.com/vlad.tkk?ref=bookmarks">
-                    <img src="content/media/picture/social/facebook.png" alt="facebook">
-                </a>
-                <a href="https://vk.com/vt5496">
-                    <img src="content/media/picture/social/vk.png" alt="vk">
-                </a>
+                <a class="widget-area-ask" href="https://f3.cool/vt5496">
+                <span>Ask me anonymous</span><div><img src="media/picture/social/F3.png" alt="ASK!"></div>
+            </a>
             </div>
-            <a class="widget-area-email" href="mailto:tkk.vlad@gmail.com">
-                <header>
-                      <span>Ваши предложения</span>
-                </header>
-                <article>
-                    <span>Если у вас возникла интересная идея или предложения, присылайте нам на нашу электронную почту</span>
-                    <button>Предложить</button>
-                </article>
-            </a>
-            <a class="widget-area-ask" href="https://f3.cool/vt5496">
-                <span>Ask me anonymous</span><div><img src="content/media/picture/social/F3.png" alt="ASK!"></div>
-            </a>
         </aside>
+        
+        <div id="content" class="margin"></div>
+
 
     </div>
 </div>

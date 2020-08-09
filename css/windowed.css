@@ -1,0 +1,250 @@
+*{
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1020px;
+    padding: 0 10px;
+    margin: 0 auto;
+    transition: 1s;
+}
+.container-notactive {
+    background-color: black;
+    opacity: 0.3;
+    transition: 1s;
+    }
+.windowed {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.margin{
+    width: 70%;
+    margin-right: 20px;
+    order: 1;
+}
+
+.margin-post{
+    background-color: #f1ede9;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+
+
+
+.widget-area {
+    width: 30%;
+    height: 100%;
+    top: 0;
+    order: 2;
+}
+
+
+#open-widgets{
+    display: none;
+}
+
+
+.widget-area-social{
+    width: 100%;
+    padding: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+ }
+.widget-area-social>a{
+    width: 20%;
+}
+.widget-area-social>a>img{
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all;
+    transition-duration: 0.3s;
+}
+.widget-area-social>a>img:hover{
+    padding: 0;
+}
+
+
+.widget-area-quote{
+
+}
+
+
+.widget-area-email {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #00500e;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    height: 220px;
+    margin-top: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.widget-area-email>header{
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.widget-area-email>header>span{
+    font-size: 25px;
+    font-family: "Comic Sans MS";
+    color: white;
+    text-align: center;
+}
+.widget-area-email>article{
+    height: 70%;
+    background-color: #f1ede9;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 12px;
+}
+.widget-area-email>article>span{
+    font-family: Tahoma;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.widget-area-email>article>button{
+    width: 90%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 120%;
+    background-color: #501d25;
+    color: white;
+    height: 30%;
+    list-style-type: none;
+    transition: all;
+    transition-duration: 0.3s;
+}
+.widget-area-email>article>button:hover{
+    font-size: 140%;
+}
+
+.widget-area-ask {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    height: 90px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #861983;
+}
+.widget-area-ask>span{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    font-size: 30px;
+    font-family: "Comic Sans MS";
+    text-align: center;
+    color: whitesmoke;
+    padding: 0 10px;
+}
+.widget-area-ask>div{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    transition: all;
+    transition-duration: 0.3s;
+    padding: 10px;
+}
+.widget-area-ask>div>img{
+    height: 100%;
+}
+.widget-area-ask:hover div{
+    padding: 6px;
+}
+
+
+
+
+@media (max-width: 600px) {
+    .windowed {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .margin {
+        position: relative;
+        width: 100%;
+        margin: 0;
+        order: 1;
+        top: 0;
+        transition: 1s;
+    }
+    .margin.margin-active{
+        top: 450px;
+    }
+
+
+    .widget-area {
+        width: 100%;
+        order: 0;
+    }
+
+    #open-widgets {
+        /*display: none;*/
+        height: 60px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #2b2a29;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    #open-widgets > span {
+        color: white;
+        font-size: 200%;
+        font-family: "Comic Sans MS";
+        margin-right: 10px;
+    }
+
+    #open-widgets > img {
+        height: 40px;
+        transition: 1s;
+    }
+    #open-widgets>img.img-active{
+        transform: rotate(180deg);
+    }
+
+    #widgets {
+        position: relative;
+        top: -450px;
+        height: 0;
+        transition: 1s;
+    }
+
+    #widgets.widgets-active {
+        top: 0;
+    }
+}
+
+
+
+
